@@ -1,0 +1,2 @@
+# BCAM-Cell-SKY130
+A BCAM Cell built on SKY130 PDK
