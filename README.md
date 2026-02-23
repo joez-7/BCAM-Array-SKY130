@@ -1,4 +1,6 @@
 # BCAM-Cell-SKY130
 A BCAM Cell built on SKY130 PDK
 ## References
-1. K. Pagiamtzis and A. Sheikholeslami, *Content-Addressable Memory (CAM) Circuits and Architectures: A Tutorial and Survey*, *IEEE Journal of Solid-State Circuits*, vol. 41, no. 3, pp. 712–727, Mar. 2006. [DOI](https://doi.org/10.1109/JSSC.2005.864128)
+1. Justin London, *Design and Simulation of 6T SRAM Array*, arXiv:2508.09419 [eess.SY], v1, submitted Aug. 13, 2025. [DOI](https://doi.org/10.48550/arXiv.2508.09419) · [HTML](https://arxiv.org/html/2508.09419v1) 
+2. K. Pagiamtzis and A. Sheikholeslami, *Content-Addressable Memory (CAM) Circuits and Architectures: A Tutorial and Survey*, *IEEE Journal of Solid-State Circuits*, vol. 41, no. 3, pp. 712–727, Mar. 2006. [DOI](https://doi.org/10.1109/JSSC.2005.864128)
+3. Fabrizio Ottati, *ALiAS - Analog Logic-in-Memory Arrays Synthesizer*, Tesi di Laurea Magistrale (M.Sc. thesis), Politecnico di Torino, Apr. 2020. [PDF](https://webthesis.biblio.polito.it/14445/1/tesi.pdf)
