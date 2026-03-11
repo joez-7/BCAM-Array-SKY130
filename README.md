@@ -1,4 +1,4 @@
-# BCAM-Cell-SKY130
+# BCAM Array (SKY130)
 A BCAM Cell built on SKY130 PDK
 
 ## References
