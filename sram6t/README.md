@@ -1,6 +1,6 @@
 # Static Random Access Memory (SRAM 6T)
 ## Xschem
-![image](https://github.com/joez-7/BCAM-Cell-SKY130/blob/80be3fa1df80c246b9edb976914eac8dde80d5a3/images/sram6t.png)
+![image](https://github.com/joez-7/BCAM-Array-SKY130/blob/5ba66deec1cfcc1e5e88b3710e10d63e335bc066/images/sram6t.png)
 
 ## Magic Layout
 ![image](https://github.com/joez-7/BCAM-Cell-SKY130/blob/80be3fa1df80c246b9edb976914eac8dde80d5a3/images/sram6t_layout.png)
