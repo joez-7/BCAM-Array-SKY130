@@ -1,5 +1,19 @@
 # BCAM Array (SKY130)
-A BCAM array built on SKY130 PDK
+## Introduction
+This project covers the design, physical layout, and verification of three custom memory blocks using the SKY130 process: a 6T SRAM bit-cell, a 1-bit BCAM cell, and a 4-bit BCAM array. The work was split into two stages. In the first stage, each circuit was designed and simulated at the schematic level using Xschem and NGSpice to verify that the intended logic and storage behaviour worked as intended. In the second stage, a layout was designed for each block. Afterward, extraction, DRC and LVS checking, and post-extraction simulation were used to confirm that the design remained functional and correct.
+
+## Testing and Verification Methodologies
+The goal was to show that not only did each schematic work ideally, but also to ensure that the layout preserved the intended behavior. Hence, both waveform plots and .meas were used. The waveforms provide a visualization of the circuit operation, while the .meas statements translate those waveforms into quantifiable pass/fail.
+
+Waveforms are important because they show the relationship between control signals and internal/output nodes. For example, from a waveform, it is possible to see that: the wordline (WL) turns on at the correct time, the bitlines (BL & BLB) or searchlines (SL & SLB) are driven to the intended values, and the storage or matchlines (ML & MLF) nodes respond accordingly.
+
+However, a waveform isn't enough evidence that the circuit is correct because the visual interpretation is subjective. For instance, a node may appear “high enough” or “low enough” by eye without proving that it actually satisfies the required operating condition. Thus, .meas is used to provide numerical values.
+
+For example, if ml_pre is the matchline voltage immediately before evaluation and ml_min is the minimum matchline voltage during evaluation, then
+`.meas tran ml_drop PARAM='ml_pre - ml_min'`
+computes the matchline discharge magnitude. Another statement, such as
+`.meas tran match_ok PARAM='(ml_min > 0.9*VDD)'`
+then converts that analog behavior into a logical verification result. If the minimum matchline voltage stays above the required threshold, match_ok returns 1; otherwise, it returns 0. 
 
 ## 1-bit BCAM Cell
 ### Xschem
