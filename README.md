@@ -16,14 +16,14 @@ computes the matchline discharge magnitude. Another statement, such as
 then converts that analog behavior into a logical verification result. If the minimum matchline voltage stays above the required threshold, match_ok returns 1; otherwise, it returns 0. 
 
 ## 1-bit BCAM Cell
-### Xschem
+### Schematic
 ![image](https://github.com/joez-7/BCAM-Array-SKY130/blob/7bfe0bfd765db0e6e3558b7feee1b7ae163b1694/images/bcam1.png)
 
 ### Layout
 ![image](https://github.com/joez-7/BCAM-Array-SKY130/blob/a957816dd77f1167cfb9a3bbd95f4d5c4aef2d84/images/bcam1_layout.png)
 
 ## 4-bit BCAM Array
-### Xschem
+### Schematic
 ![image](https://github.com/joez-7/BCAM-Array-SKY130/blob/2de8018213b4eca66d855cd2445a9a2529ffa4bb/images/bcam_row4.png)
 
 ### Layout
